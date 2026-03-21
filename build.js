@@ -125,7 +125,7 @@ function nav(active) {
 const FOOTER = `  <footer class="site-footer">
     <div class="footer-inner">
       <p class="footer-name">Radovan Grezo</p>
-      <p class="footer-bio">Creative Director &amp; Copywriter. Based in Prague. Available for on-site anywhere.</p>
+      <p class="footer-bio">Creative Director &amp; Copywriter. Based in Prague. Owner of Somebody&amp;Somebody agency</p>
       <p class="footer-contact"><a href="contact.html">Get in touch</a></p>
     </div>
   </footer>`;
@@ -189,7 +189,7 @@ if (!fs.existsSync(SITE)) fs.mkdirSync(SITE);
         <h1 class="hero-title">I'm Rad And You Can Be Too</h1>
         <p class="hero-sub">Licensed accountant turned advertising Creative Director and Copywriter. True story.</p>
         <p class="hero-agencies">Saatchi&amp;Saatchi &middot; Publicis &middot; Jung von Matt/Spree &middot; AKQA &middot; Cutwater SF &middot; Ogilvy &middot; Fallon &middot; GREY &middot; BBDO &middot; BBH &middot; Apple</p>
-        <p class="hero-location">Based in Prague. Available for on-site anywhere.</p>
+        <p class="hero-location">Based in Prague. Owner of Somebody&amp;Somebody agency</p>
       </div>
     </section>
     <section class="portfolio-grid-section">
@@ -268,7 +268,7 @@ ${cards}
       </div>
       <div class="contact-layout">
         <div class="contact-copy">
-          <p class="contact-tagline">Based in Prague.<br>Available for on-site anywhere.</p>
+          <p class="contact-tagline">Based in Prague.<br>Owner of Somebody&amp;Somebody agency</p>
           <ul class="contact-links">
             ${socialRows}
           </ul>
