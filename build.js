@@ -210,11 +210,6 @@ ${cards}
 
 // ── 2. resume.html ────────────────────────────────────────────────────────────
 {
-  // Agency logos: images[1]–[8] (images[0] is the portrait)
-  const logos = resume.images.slice(1, 9).filter(Boolean).map(src =>
-    `<img src="${esc(src)}" alt="Agency logo" loading="lazy" class="agency-logo">`
-  ).join('\n        ');
-
   const body = `  <main>
     <div class="page-inner">
 
@@ -363,10 +358,6 @@ ${cards}
           <li><span class="award-count">2×</span> Zlatá pecka</li>
         </ul>
       </section>
-
-      <div class="agency-logos">
-        ${logos}
-      </div>
 
     </div>
   </main>`;
