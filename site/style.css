@@ -249,16 +249,125 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ── RESUME ───────────────────────────────────────────────────────────────── */
-.resume-layout {
+.resume-hero {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 3.5rem;
-  margin-bottom: 3.5rem;
+  grid-template-columns: 1fr 220px;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 0;
+}
+
+.resume-tagline {
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  margin-top: 1rem;
+  max-width: 520px;
+  line-height: 1.5;
 }
 
 .portrait {
   width: 100%;
   object-fit: cover;
+}
+
+.resume-section {
+  margin-bottom: 3.5rem;
+}
+
+.resume-section-title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin-bottom: 1.75rem;
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+}
+
+.resume-bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.resume-bullets li {
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  border-bottom: 1px solid rgba(47,47,47,0.12);
+  position: relative;
+}
+
+.resume-bullets li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+
+.resume-entry {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1.5rem 2.5rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid rgba(47,47,47,0.12);
+}
+
+.resume-entry:first-child {
+  border-top: 1px solid rgba(47,47,47,0.12);
+}
+
+.resume-entry-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.resume-years {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.resume-company {
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+}
+
+.resume-role {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.resume-brands-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.resume-awards {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem 1rem;
+}
+
+.resume-awards li {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(47,47,47,0.15);
+  font-size: 0.9rem;
+}
+
+.award-count {
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  margin-right: 0.35rem;
+  color: var(--charcoal);
 }
 
 .agency-logos {
@@ -442,9 +551,18 @@ img { max-width: 100%; height: auto; display: block; }
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .resume-layout {
-    grid-template-columns: 160px 1fr;
+  .resume-hero {
+    grid-template-columns: 1fr 160px;
     gap: 2rem;
+  }
+
+  .resume-entry {
+    grid-template-columns: 140px 1fr;
+    gap: 1rem 1.5rem;
+  }
+
+  .resume-awards {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact-layout {
@@ -463,8 +581,21 @@ img { max-width: 100%; height: auto; display: block; }
     gap: 3rem;
   }
 
-  .resume-layout {
+  .resume-hero {
     grid-template-columns: 1fr;
+  }
+
+  .resume-hero .resume-portrait {
+    display: none;
+  }
+
+  .resume-entry {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .resume-awards {
+    grid-template-columns: 1fr 1fr;
   }
 
   .project-images {

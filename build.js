@@ -210,31 +210,164 @@ ${cards}
 
 // ── 2. resume.html ────────────────────────────────────────────────────────────
 {
-  const text = cleanText(resume.text);
-  const paragraphs = toParagraphs(text);
-  // Agency logos: first 9 images are logo assets
-  const logos = resume.images.slice(0, 9).filter(Boolean).map(src =>
+  // Agency logos: images[1]–[8] (images[0] is the portrait)
+  const logos = resume.images.slice(1, 9).filter(Boolean).map(src =>
     `<img src="${esc(src)}" alt="Agency logo" loading="lazy" class="agency-logo">`
   ).join('\n        ');
 
   const body = `  <main>
     <div class="page-inner">
-      <div class="page-header">
-        <p class="page-label">Radovan's Famous</p>
-        <h1>Resume</h1>
-        <hr class="accent-rule">
-      </div>
-      <div class="resume-layout">
+
+      <div class="resume-hero">
+        <div class="resume-hero-text">
+          <p class="page-label">Radovan's Famous</p>
+          <h1>Resume</h1>
+          <p class="resume-tagline">A certified accountant turned integrated Creative Director and Copywriter. True story.</p>
+        </div>
         <div class="resume-portrait">
           <img src="${esc(resume.images[0])}" alt="Radovan Grezo" class="portrait">
         </div>
-        <div class="resume-text prose">
-          ${paragraphs}
-        </div>
       </div>
+
+      <hr class="accent-rule">
+
+      <section class="resume-section">
+        <h2 class="resume-section-title">About</h2>
+        <ul class="resume-bullets">
+          <li>Great at building client relationships and nurturing junior talent</li>
+          <li>Only happy when producing a lot of work — the bigger the impact on a brand, the happier</li>
+          <li>Bad at creating ghost ads to win Lions</li>
+          <li>English &amp; German to Slovakian translator</li>
+        </ul>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="resume-section-title">Experience</h2>
+
+        <div class="resume-entry">
+          <div class="resume-entry-meta">
+            <span class="resume-years">2020 – today</span>
+            <span class="resume-company">Somebody&amp;Somebody, CZ</span>
+          </div>
+          <div class="resume-entry-body">
+            <p class="resume-role">Owner, Creative Director</p>
+            <p>We made the Dedoles hamsters and due to popular client demand, we had to start our own agency. So we did.</p>
+          </div>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-meta">
+            <span class="resume-years">2013 – 2022</span>
+            <span class="resume-company">Apple, UK</span>
+          </div>
+          <div class="resume-entry-body">
+            <p class="resume-role">Freelance Creative Director</p>
+            <p>Not able to talk about the role, responsibilities and more due to very neatly worded NDAs.</p>
+          </div>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-meta">
+            <span class="resume-years">2014 – today</span>
+            <span class="resume-company">Freelance</span>
+          </div>
+          <div class="resume-entry-body">
+            <p class="resume-role">Creative Director, Copywriter</p>
+            <p>Edelman.ergo Berlin, Fallon, BBH London, Cutwater SF, Jung von Matt/Spree, VCCP, TAG:, OLIVER.agency, AKQA, MotherTongue</p>
+            <p>The big TV shoots. The little Instagram posts. And anything in between.</p>
+            <p class="resume-brands-label">Brands:</p>
+            <ul class="resume-bullets">
+              <li>Dove, Google, Nike, ŠKODA AUTO, Magnum, Olympus, Hyundai</li>
+              <li>Rexona, Avon, AXE/Lynx, Signal, Emirates Airlines, Austrian Airlines</li>
+              <li>Honda, Electrolux, Intel, M&amp;Ms and many more</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-meta">
+            <span class="resume-years">2013</span>
+            <span class="resume-company">SinnerSchrader, CZ/DE</span>
+          </div>
+          <div class="resume-entry-body">
+            <p class="resume-role">Creative Director, Digital</p>
+            <p>Global digital AOR for ŠKODA AUTO. Responsible for smooth sailing of all global digital campaigns for the VW group brand. Liaised with traditional, media, and CRM agencies across ŠKODA's global roster to make every campaign feel like one voice — not four agencies.</p>
+          </div>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-meta">
+            <span class="resume-years">2010 – 2012</span>
+            <span class="resume-company">Saatchi&amp;Saatchi Slovakia</span>
+          </div>
+          <div class="resume-entry-body">
+            <p class="resume-role">Creative Director, Digital</p>
+            <p>Promoted to Creative Director only 6 months after joining as Senior Copywriter. Led a team of 10 across digital and traditional campaigns for clients spanning financial to FMCG. Won the EURO Effie for the international launch of ZUNO bank's brand.</p>
+          </div>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-meta">
+            <span class="resume-years">2008 – 2010</span>
+            <span class="resume-company">Publicis/Saatchi&amp;Saatchi Austria</span>
+          </div>
+          <div class="resume-entry-body">
+            <p class="resume-role">Senior English Copywriter</p>
+            <p>T-Mobile's international creative team during the era of the famous <em>Life is for sharing</em> platform — which pioneered real-life event stunts and candid camera campaigns.</p>
+          </div>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-meta">
+            <span class="resume-years">2004 – 2008</span>
+            <span class="resume-company">Ogilvy Slovakia</span>
+          </div>
+          <div class="resume-entry-body">
+            <p class="resume-role">Associate Creative Director</p>
+            <p>First serious client-facing responsibility on the agency's second largest account. Successfully defended the AOR title in a multi-stage pitch — the two weeks Radovan learned what 3 hours of sleep feels like.</p>
+          </div>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-meta">
+            <span class="resume-years">2002 – 2004</span>
+            <span class="resume-company">Freelance</span>
+          </div>
+          <div class="resume-entry-body">
+            <p class="resume-role">Copywriter</p>
+            <p>Doing whatever whoever would pay Radovan to do.</p>
+          </div>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-meta">
+            <span class="resume-years">2000 – 2002</span>
+            <span class="resume-company">GREY Slovakia</span>
+          </div>
+          <div class="resume-entry-body">
+            <p class="resume-role">Junior Copywriter</p>
+            <p>Doing whatever whoever at the agency would tell Radovan to do.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="resume-section">
+        <h2 class="resume-section-title">Awards</h2>
+        <ul class="resume-awards">
+          <li><span class="award-count">1×</span> EURO Effie</li>
+          <li><span class="award-count">2×</span> MIDAS Awards</li>
+          <li><span class="award-count">1×</span> PIAF</li>
+          <li><span class="award-count">5×</span> Effie</li>
+          <li><span class="award-count">9×</span> Zlatý klinec</li>
+          <li><span class="award-count">2×</span> Zlatá pecka</li>
+        </ul>
+      </section>
+
       <div class="agency-logos">
         ${logos}
       </div>
+
     </div>
   </main>`;
 
