@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Radovan Grezo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="site-logo">Radovan Grezo</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="archive.html">Archive</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="page-inner">
+      <div class="page-header">
+        <p class="page-label">I Dare You To</p>
+        <h1>Contact me</h1>
+        <hr class="accent-rule">
+      </div>
+      <div class="contact-layout">
+        <div class="contact-copy">
+          <p class="contact-tagline">Based in Berlin.<br>Available for on-site anywhere.</p>
+          <ul class="contact-links">
+            <li><a href="mailto:radovan.grezo@gmail.com" target="_blank" rel="noopener">hello@radovangrezo.com</a></li>
+            <li><a href="http://www.linkedin.com/in/radovangrezo" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="http://www.facebook.com/andrejdwin" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="http://www.twitter.com/andrejdwin" target="_blank" rel="noopener">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="contact-image">
+          <img src="https://i0.wp.com/radovangrezo.com/wp-content/uploads/2015/06/radovan-undercut.jpg?resize=480%2C360&amp;ssl=1" alt="Contact Radovan Grezo" loading="lazy" class="contact-img">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-name">Radovan Grezo</p>
+      <p class="footer-bio">Creative Director &amp; Copywriter. Based in Berlin. Available for on-site anywhere.</p>
+      <p class="footer-contact"><a href="contact.html">Get in touch</a></p>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('open', !open);
+    });
+  </script>
+</body>
+</html>

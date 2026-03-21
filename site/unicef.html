@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help a Child with UNICEF – Radovan Grezo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="site-logo">Radovan Grezo</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="active">Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="archive.html">Archive</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="page-inner">
+      <div class="project-header">
+        <a href="index.html" class="back-link">&larr; All Work</a>
+        <p class="project-cats">Digital Campaign</p>
+        <h1>Help a Child with UNICEF</h1>
+        <p class="project-desc">Help a Child with UNICEF was a Facebook application turning donating to support children in developing countries into a social (and perhaps even fun) experience.</p>
+        <hr class="accent-rule">
+      </div>
+      <div class="prose">
+        <p>Digital Campaign Help a Child with UNICEF The best use of my spare time and money Help a Child with UNICEF was a Facebook application turning donating to support children in developing countries into a social (and perhaps even fun) experience. This is the personal pet project that moved me from TV commercials to digital. I came up with the idea, got in touch with UNICEF leadership and since they liked the idea, but had no budget for it, I financed it and made sure it went from idea to a live app. Agency: NONE (personal project) Year: 2009-2010</p>
+      </div>
+      <div class="project-videos">
+        <div class="video-wrap"><iframe src="https://www.youtube.com/embed/UIdDSYwzYgU?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent" frameborder="0" allowfullscreen loading="lazy" title="Embedded video"></iframe></div>
+      </div>
+      <div class="project-images">
+        <figure class="project-image"><img src="https://i0.wp.com/radovangrezo.com/wp-content/uploads/2010/11/kids-and-logo.png?resize=639%2C418" alt="Help a Child with UNICEF" loading="lazy"></figure>
+        <figure class="project-image"><img src="https://i0.wp.com/radovangrezo.com/wp-content/uploads/2015/01/be-greedy-zuno.jpg?resize=480%2C360&amp;ssl=1" alt="Help a Child with UNICEF" loading="lazy"></figure>
+        <figure class="project-image"><img src="https://i0.wp.com/radovangrezo.com/wp-content/uploads/2010/11/kids-and-logo.png?resize=480%2C360&amp;ssl=1" alt="Help a Child with UNICEF" loading="lazy"></figure>
+        <figure class="project-image"><img src="https://i0.wp.com/radovangrezo.com/wp-content/uploads/2015/01/apple-logo.png?resize=480%2C360&amp;ssl=1" alt="Help a Child with UNICEF" loading="lazy"></figure>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-name">Radovan Grezo</p>
+      <p class="footer-bio">Creative Director &amp; Copywriter. Based in Berlin. Available for on-site anywhere.</p>
+      <p class="footer-contact"><a href="contact.html">Get in touch</a></p>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('open', !open);
+    });
+  </script>
+</body>
+</html>

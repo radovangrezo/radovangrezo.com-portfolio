@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKODA – Let’s Reconnect – Radovan Grezo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="site-logo">Radovan Grezo</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="active">Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="archive.html">Archive</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="page-inner">
+      <div class="project-header">
+        <a href="index.html" class="back-link">&larr; All Work</a>
+        <p class="project-cats">Digital Campaign</p>
+        <h1>SKODA – Let’s Reconnect</h1>
+        <p class="project-desc">A content heavy web experience paving the road for ŠKODA’s most connected car’s launch.</p>
+        <hr class="accent-rule">
+      </div>
+      <div class="prose">
+        <p>Digital Campaign SKODA – Let’s Reconnect A content heavy web experience paving the road for ŠKODA’s most connected car’s launch Let’s Reconnect is a beautifully crafted content-driven web offering a regularly updated collection of activities reconnecting the new urban generations with the great as well as small outdoors. It’s one of the first communication steps laying the foundation for the upcoming launch of ŠKODA’s first SUV named Kodiaq – a big step for the VW group automaker. Agency: Fallon Prague Year: 2016</p>
+      </div>
+      <div class="project-videos">
+        <div class="video-wrap"><iframe src="https://www.youtube.com/embed/AJSmyYvdilU?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent" frameborder="0" allowfullscreen loading="lazy" title="Embedded video"></iframe></div>
+      </div>
+      <div class="project-images">
+        <figure class="project-image"><img src="https://i0.wp.com/radovangrezo.com/wp-content/uploads/2017/08/letsreconnect.gif?resize=552%2C282" alt="SKODA – Let’s Reconnect" loading="lazy"></figure>
+        <figure class="project-image"><img src="https://i0.wp.com/radovangrezo.com/wp-content/uploads/2017/08/Tchibo.jpg?resize=480%2C360&amp;ssl=1" alt="SKODA – Let’s Reconnect" loading="lazy"></figure>
+        <figure class="project-image"><img src="https://i0.wp.com/radovangrezo.com/wp-content/uploads/2017/08/lets-reconnect-featured-image.png?resize=480%2C360&amp;ssl=1" alt="SKODA – Let’s Reconnect" loading="lazy"></figure>
+        <figure class="project-image"><img src="https://i0.wp.com/radovangrezo.com/wp-content/uploads/2018/02/mana-featured-image-e1584541013238.png?resize=480%2C360&amp;ssl=1" alt="SKODA – Let’s Reconnect" loading="lazy"></figure>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-name">Radovan Grezo</p>
+      <p class="footer-bio">Creative Director &amp; Copywriter. Based in Berlin. Available for on-site anywhere.</p>
+      <p class="footer-contact"><a href="contact.html">Get in touch</a></p>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('open', !open);
+    });
+  </script>
+</body>
+</html>
