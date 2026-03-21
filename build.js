@@ -247,12 +247,10 @@ ${cards}
 
 // ── 3. contact.html ───────────────────────────────────────────────────────────
 {
-  const emailLink = contact.links.find(l => l.href.startsWith('mailto:'));
+  const emailLink = { href: 'mailto:hello@radovangrezo.com', text: 'hello@radovangrezo.com' };
   const linkedin  = contact.links.find(l => l.href.includes('linkedin'));
-  const facebook  = contact.links.find(l => l.href.includes('facebook'));
-  const twitter   = contact.links.find(l => l.href.includes('twitter'));
 
-  const socialRows = [emailLink, linkedin, facebook, twitter].filter(Boolean).map(l => {
+  const socialRows = [emailLink, linkedin].filter(Boolean).map(l => {
     const label = (l.text || '').replace(/>>/g, '').trim() || 'Email';
     return `<li><a href="${esc(l.href)}" target="_blank" rel="noopener">${esc(label)}</a></li>`;
   }).join('\n            ');
