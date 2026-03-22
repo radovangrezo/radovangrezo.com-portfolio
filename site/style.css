@@ -485,6 +485,7 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 1.35rem;
   line-height: 1.5;
   max-width: 680px;
+  margin-top: 40px;
   margin-bottom: 2.5rem;
   border-left: 3px solid var(--yellow);
   padding-left: 1.25rem;
