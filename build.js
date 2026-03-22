@@ -451,7 +451,6 @@ for (const p of PORTFOLIOS) {
         ${catHtml}
         <h1>${esc(title)}</h1>
         ${metaHtml}
-        <hr class="accent-rule">
       </div>
       ${ledeHtml}
       <div class="prose">
