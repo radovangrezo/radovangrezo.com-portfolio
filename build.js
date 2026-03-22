@@ -17,7 +17,7 @@ const archive = byUrl['https://radovangrezo.com/?portfolio=older-work'];
 
 // ── Portfolio definitions (slug → output file, grid thumbnail index) ─────────
 const PORTFOLIOS = [
-  { slug: 'dedoles-sk-hamster-time',                                                            file: 'dedoles.html',               thumbIdx: 2  },
+  { slug: 'dedoles-sk-hamster-time',                                                            file: 'dedoles.html',               thumbIdx: 2,  lede: 'If you have a product people love, but still 60% of the population never heard of you, call up some hamsters to knock your socks off.' },
   { slug: 'raiffeisen-bank-you-work-hard-for-your-money-we-work-hard-for-you',                 file: 'raiffeisen.html',            thumbIdx: 3  },
   { slug: 'mana-food-evolution',                                                                file: 'mana.html',                  thumbIdx: 4  },
   { slug: 'skoda-lets-reconnect',                                                               file: 'skoda.html',                 thumbIdx: 5  },
@@ -428,6 +428,7 @@ for (const p of PORTFOLIOS) {
   const cats     = extractCategories(home.links, p.slug);
   const catHtml  = cats.length ? `<p class="project-cats">${cats.map(esc).join(' &middot; ')}</p>` : '';
   const metaHtml = pd.meta_description ? `<p class="project-desc">${esc(pd.meta_description)}</p>` : '';
+  const ledeHtml = p.lede ? `<p class="project-lede">${esc(p.lede)}</p>` : '';
   const paragraphs = toParagraphs(text);
 
   const uniqueImages = [...new Set(pd.images)];
@@ -452,6 +453,7 @@ for (const p of PORTFOLIOS) {
         ${metaHtml}
         <hr class="accent-rule">
       </div>
+      ${ledeHtml}
       <div class="prose">
         ${paragraphs}
       </div>
