@@ -372,9 +372,10 @@ ${cards}
 // ── 3. contact.html ───────────────────────────────────────────────────────────
 {
   const emailLink = { href: 'mailto:hello@radovangrezo.com', text: 'hello@radovangrezo.com' };
+  const phoneLink = { href: 'tel:+420773633362', text: '+420 773 633 362' };
   const linkedin  = contact.links.find(l => l.href.includes('linkedin'));
 
-  const socialRows = [emailLink, linkedin].filter(Boolean).map(l => {
+  const socialRows = [emailLink, phoneLink, linkedin].filter(Boolean).map(l => {
     const label = (l.text || '').replace(/>>/g, '').trim() || 'Email';
     return `<li><a href="${esc(l.href)}" target="_blank" rel="noopener">${esc(label)}</a></li>`;
   }).join('\n            ');
