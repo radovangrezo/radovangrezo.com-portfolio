@@ -327,9 +327,22 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--muted);
 }
 
+.resume-location {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
 .resume-company {
   font-family: Georgia, serif;
   font-size: 0.95rem;
+}
+
+.resume-agencies {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 
 .resume-role {
