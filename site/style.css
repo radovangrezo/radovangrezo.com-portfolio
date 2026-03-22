@@ -58,6 +58,10 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: normal;
 }
 
+.site-logo-title {
+  color: var(--muted);
+}
+
 .nav-links {
   display: flex;
   gap: 2.5rem;

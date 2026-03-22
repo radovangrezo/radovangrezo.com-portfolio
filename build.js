@@ -111,7 +111,7 @@ function nav(active) {
     .join('\n        ');
   return `  <header class="site-header">
     <nav class="site-nav">
-      <a href="index.html" class="site-logo">Radovan Grezo</a>
+      <a href="index.html" class="site-logo">Radovan Andrej Grezo, <span class="site-logo-title">Creative Director &amp; Copywriter</span></a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
