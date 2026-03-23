@@ -30,6 +30,8 @@ h2 { font-size: 2rem; }
 h3 { font-size: 1.375rem; }
 
 a { color: inherit; text-decoration: none; }
+main a:not(.back-link) { text-decoration: underline; text-underline-offset: 3px; }
+main a:not(.back-link):hover { opacity: 0.7; }
 img { max-width: 100%; height: auto; display: block; }
 
 /* ── NAVIGATION ───────────────────────────────────────────────────────────── */
@@ -244,11 +246,11 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ── PROSE ────────────────────────────────────────────────────────────────── */
 .prose {
-  margin-top: 40px;
+  padding-top: 48px;
 }
 
 .prose p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   max-width: 680px;
 }
 
@@ -256,13 +258,22 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 0;
 }
 
+.prose a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  opacity: 0.7;
+}
+
 .prose h2 {
-  margin-top: 40px;
-  margin-bottom: 0;
+  padding-top: 100px;
+  margin-bottom: 16px;
 }
 
 .prose h2:first-child {
-  margin-top: 40px;
+  padding-top: 1000;
 }
 
 /* ── RESUME ───────────────────────────────────────────────────────────────── */
@@ -508,7 +519,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin: 3.5rem 0;
+  margin: 4rem 0;
 }
 
 .video-wrap {
