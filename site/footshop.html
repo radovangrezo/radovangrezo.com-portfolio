@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footshop Poland Launch – Radovan Grezo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="site-logo">Radovan Andrej Grezo, <span class="site-logo-title">Creative Director &amp; Copywriter</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="active">Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="archive.html">Archive</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="page-inner">
+      <div class="project-header">
+        <a href="index.html" class="back-link">&larr; All Work</a>
+        <h1>Footshop Poland Launch</h1>
+      </div>
+      <p class="project-lede">Launching in Poland with a new AI Flip brand asset</p>
+      <div class="video-wrap"><iframe src="https://www.youtube.com/embed/MHnRwAVbS7U" frameborder="0" allowfullscreen loading="lazy" title="Embedded video"></iframe></div>
+      <div class="prose">
+        <h2 style="padding-top: 48px;">The Brief</h2>
+        <p>Footshop's full-scale entry into Poland was the culmination of a longer strategic engagement — we'd already helped the brand sharpen its positioning, define its USPs, and deepen the use of its existing brand assets. Now came the big moment: launch the brand in a new market, anchored by a flagship store opening in central Warsaw.</p>
+        <h2 style="padding-top: 30px;">The Work</h2>
+        <p>We developed a new supplementary brand asset — an AI-powered flip effect — woven into the campaign creative. It gave the spots a distinctive visual signature that Footshop still uses in always-on campaigns today.</p>
+        <h2 style="padding-top: 30px;">The Results</h2>
+        <p>The numbers blew past even our most optimistic projections. On Facebook, 25% of viewers watched the spots to the very end. On YouTube, brand lift hit +1.93% — over 530,000 lifted users. Against the benchmark set by the biggest Czech campaign of the year, we delivered CPM 70% below benchmark and an interaction rate 50% higher.</p>
+        <p>Emboldened by the numbers, the client rolled the "Polish" campaign out to Romania and Czechia, where it proved just as effective.</p>
+      </div>
+      <p style="margin-top: 48px;"><br>Agency: <a href="https://somebodytwice.com/" target="_blank" rel="noopener">Somebody&amp;Somebody</a><br>Year: 2024</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-name">Radovan Grezo</p>
+      <p class="footer-bio">Creative Director &amp; Copywriter. Based in Prague. Owner of Somebody&amp;Somebody agency</p>
+      <p class="footer-contact"><a href="contact.html">Get in touch</a></p>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('open', !open);
+    });
+  </script>
+</body>
+</html>
