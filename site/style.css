@@ -243,6 +243,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ── PROSE ────────────────────────────────────────────────────────────────── */
+.prose {
+  margin-top: 40px;
+}
+
 .prose p {
   margin-bottom: 1.25rem;
   max-width: 680px;
@@ -250,6 +254,15 @@ img { max-width: 100%; height: auto; display: block; }
 
 .prose p:last-child {
   margin-bottom: 0;
+}
+
+.prose h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.prose h2:first-child {
+  margin-top: 0;
 }
 
 /* ── RESUME ───────────────────────────────────────────────────────────────── */
