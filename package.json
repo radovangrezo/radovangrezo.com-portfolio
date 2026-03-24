@@ -1,0 +1,26 @@
+{
+  "name": "radovangrezo.com",
+  "version": "1.0.0",
+  "description": "copywriter and creative director portfolio site",
+  "main": "build.js",
+  "scripts": {
+    "generate-og": "node generate-og-image.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radovangrezo/radovangrezo.com-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/radovangrezo/radovangrezo.com-portfolio/issues"
+  },
+  "homepage": "https://github.com/radovangrezo/radovangrezo.com-portfolio#readme",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.97",
+    "sharp": "^0.34.5"
+  }
+}
